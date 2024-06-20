@@ -6,9 +6,9 @@ summary: "Learn more about me and why I am starting this blog."
 tags: ["welcome", "new", "about", "first"]
 ---
 
-It's been almost 2 years since I've jumped in full-time into web3 space, over time I've refined the tools my team use to optimise for our productivity.
+It’s been almost two years since I jumped full-time into the web3 space. Over time, I’ve refined the tools I use to optimize for productivity
 
-# MacOs Apps
+## MacOs Apps
 - VSCode (duh)
 - [Warp](https://www.warp.dev/) - Terminal
 - [Bruno](https://www.usebruno.com/) - Git-based API Client (Postman Alternative)
@@ -23,7 +23,7 @@ It's been almost 2 years since I've jumped in full-time into web3 space, over ti
 - [Tailwindcss](https://tailwindcss.com/)
 
 ## Backend
-Many of these are project dependent but here are some of my defaults
+Mostly project dependent but here are some of my defaults
 - [Fastify](https://fastify.dev/)
 - [Prisma](https://www.prisma.io/) + Postgres
 - [Vitest](https://vitest.dev/)
