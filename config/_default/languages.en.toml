@@ -1,0 +1,10 @@
+title = "Zlace Home"
+
+[params.author]
+name = "Zlace"
+image = "img/anime_dp.webp"
+headline = "full web3 stack developer."
+links = [
+    { twitter = "https://twitter.com/zlace0x" },
+    { github = "https://github.com/zlace0x" },
+]

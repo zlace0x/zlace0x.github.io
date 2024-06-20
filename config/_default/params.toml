@@ -1,0 +1,4 @@
+colorScheme = "ocean"
+homepage.layout = "profile"
+homepage.showRecent = true
+params.mainSections = ["posts"]
