@@ -1,2 +1,4 @@
 baseURL = "https://zlace0x.github.io/"
+title = "Zlace0x"
+description = "Zlace's technical rant"
 languageCode = "en"
