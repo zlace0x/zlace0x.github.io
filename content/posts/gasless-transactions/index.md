@@ -7,13 +7,13 @@ tags: ["meta-transactions", "account abstraction", "gasless"]
 
 In an ideal world, web3 experiences should feel as seamless as web2. One of the first UX challenges for new web3 users is understanding the concept of gas. Here, we’ll explore ways to abstract gas costs from users and the technical methods to achieve this.
 
-# Someone has to pay gas
+## Someone has to pay gas
 
 Gas is essentially a fee for using blockchain resources and serves as a safeguard against spam. In Ethereum Virtual Machine (EVM), the gas payer is always the “from” address in a typical EIP-1559 transaction. To offload this cost from the user, we introduce a separate entity to submit the transaction, known as the relayer.
 
 To achieve this, we must capture the user’s intent within the transaction’s data, creating what is known as a _meta-transaction_.
 
-# Signature verification
+## Signature verification
 
 To understand different approaches to meta-transactions, we need to look at where signature verification occurs. Signature verification ensures the user has approved the transaction.
 
@@ -21,11 +21,11 @@ Traditionally, validators check the user’s signature against the “from” ad
 
 With meta-transactions, validators verify the relayer’s signature, while the user’s signature is validated elsewhere.
 
-# Implementing Meta-Transactions
+## Implementing Meta-Transactions
 
 There are three main approaches to implementing meta-transactions, each differing in where signature verification takes place.
 
-1. EIP-2771: Secure protocol for native Meta Transactions
+### 1. EIP-2771: Secure protocol for native Meta Transactions
 
 In this method, a smart contract known as the “trusted forwarder” handles user signature verification. Once verified, it forwards the transaction to the target contract, which confirms it’s from an authorized forwarder.
 
@@ -33,7 +33,7 @@ In this method, a smart contract known as the “trusted forwarder” handles us
 
 This approach depends on the target contract supporting EIP-2771 and specific [implementations](https://github.com/bcnmy/mexa/blob/master/contracts/6/forwarder/BiconomyForwarder.sol) of the trusted forwarder.
 
-2. Contract wallets
+### 2. Contract wallets
 
 Contract wallets can be enhanced with additional logic, including signature verification.
 
@@ -41,7 +41,7 @@ Here, any relayer can call a contract wallet, which verifies the user’s signat
 
 The lately popular [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337#required-entry-point-contract-functionality) specifies a set of contracts that handles validating the meta-tx.
 
-3. Custom architectures
+### 3. Custom architectures
 
 Signature verification can happen anywhere, within a centralised backend, or within contracts.
 
@@ -50,7 +50,7 @@ One example is [USDC](https://polygonscan.com/token/0x2791bca1f2de4661ed88a30c99
 1inch Fusion utilises a central backend that verifies user's swap orders and forwards them to their set of trusted workers/contracts.
 
 
-# Choosing an approach
+## Choosing an approach
 
 Selecting the right method for implementing meta-transactions depends on your specific use case and technical constraints:
 
