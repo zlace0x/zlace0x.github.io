@@ -2,8 +2,7 @@
 title: "My web3 stack"
 date: 2024-06-20
 description: "My dev setup"
-summary: "Learn more about me and why I am starting this blog."
-tags: ["welcome", "new", "about", "first"]
+tags: ["tips"]
 ---
 
 It’s been almost two years since I jumped full-time into the web3 space. Over time, I’ve refined the tools I use to optimize for productivity
