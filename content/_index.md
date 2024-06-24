@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Congo!"
-description: "This is a demo of adding content to the homepage."
+title: "Zlace - Web3 Dev"
+description: "Tech ramblings"
 ---
-Welcome to my website! I'm really happy you stopped by.
+Dev, CTO - Based in Asia
